@@ -21,7 +21,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 5.7rem;
+      font-size: 4.5rem;
     }
   }
 
@@ -77,5 +77,37 @@
 
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+// Small Height
+@include mediaHeight {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 2rem;
+      font-size: 3rem;
+    }
+
+    .sm-heading {
+      // margin-bottom: 0.5rem;
+      // padding: 0.2rem 1rem;
+      // font-size: 1.2rem;
+      display: none;
+    }
+
+    /*.icons {
+      font-size: 13px;
+    }*/
+  }
+}
+
+//ePanrita
+@include mediaHeight-ePanrita {
+  .epanrita {
+    height: 100vh;
   }
 }

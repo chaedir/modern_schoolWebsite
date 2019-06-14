@@ -108,10 +108,13 @@ body {
       content: "";
       position: absolute;
       top: 0;
+      bottom: 0;
+      left: 0;
       right: 0;
       height: 100%;
       width: 100%;
       z-index: -1;
+      display: block;
       background: rgba(68, 68, 68, 0.9); }
 
 h1,
@@ -144,6 +147,7 @@ header {
 
 main {
   padding: 4rem;
+  height: 100%;
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
@@ -192,6 +196,14 @@ main {
       opacity: 0.5;
       border-color: #00bfff;
       transition: all 0.5s ease-out; }
+
+.epanrita {
+  height: 80vh;
+  width: 100%;
+  padding: 0 0.5rem 0 0;
+  margin: 0;
+  border-style: none;
+  overflow: hidden; }
 
 .boxes {
   display: flex;
@@ -251,7 +263,7 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 5.7rem; }
+      font-size: 4.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -282,3 +294,21 @@ main {
     margin-top: 10vh; }
   .projects {
     grid-template-columns: 1fr; } }
+
+@media screen and (max-height: 580px) {
+  main {
+    align-items: center;
+    text-align: center;
+    /*.icons {
+      font-size: 13px;
+    }*/ }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 2rem;
+      font-size: 3rem; }
+    main .sm-heading {
+      display: none; } }
+
+@media screen and (max-height: 650px) {
+  .epanrita {
+    height: 100vh; } }
