@@ -89,8 +89,9 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
-      border-radius: 50%;
+      background: url("../img/portrait.jpeg");
+      background-position: center;
+      border-radius: 20%;
       border: solid 3px $secondary-color;
     }
   }

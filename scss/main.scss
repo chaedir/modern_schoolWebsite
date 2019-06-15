@@ -34,7 +34,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -88,6 +88,7 @@ main {
     margin: auto;
     border-radius: 50%;
     border: solid 3px $secondary-color;
+    background-position: center;
   }
 
   .bio {
@@ -111,6 +112,18 @@ main {
     background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color solid 5px;
+  }
+
+  .job-head {
+    font-size: 1.5rem;
+    text-align: center;
+    color: $secondary-color;
+  }
+
+  ol {
+    margin: 0 0 0 1.35rem;
+    padding: 0;
+    //list-style-type: none;
   }
 }
 

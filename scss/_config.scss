@@ -1,8 +1,8 @@
-$primary-color: #444;
-$secondary-color: #00bfff;
+$primary-color: #eee;
+$secondary-color: #1f70cc;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$background-opacity: 0.9;
+$home-image: url(../img/background.png);
+$background-opacity: 0.7;
 
 @mixin ease0ut {
   transition: all 0.5s ease-out;
@@ -14,7 +14,8 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      //position: relative;
+      background-repeat: no-repeat;
+      background-position: center;
 
       &:after {
         content: "";
@@ -28,6 +29,7 @@ $background-opacity: 0.9;
         z-index: -1;
         display: block;
         background: rgba($primary-color, $background-opacity);
+        background-size: cover;
       }
     }
   }
@@ -73,7 +75,7 @@ $background-opacity: 0.9;
   }
 }
 
-@mixin mediaHeight-ePanrita {
+@mixin mediaHeight-Menu {
   @media screen and (max-height: 650px) {
     @content;
   }
